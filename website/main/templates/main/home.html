@@ -1,0 +1,27 @@
+{% extends 'main/base.html' %}
+
+
+    <style>
+        body {background: #3a9c95;}
+    </style>
+
+{% block content %}
+
+    {% if user.is_authenticated %}
+
+    <h2>{% block title %}Your account{% endblock %}</h2>
+    <hr>
+    <meta name=viewport content="width=device-width,initial-scale=1">
+    <meta charset="utf-8"/>
+
+    <div class="nice">
+        <h3>User: {{ user.username }}</h3>
+        <h3>Record:</h3>
+    </div>
+    <!--тут можно ещё какие-нибудь поля придумать>
+
+
+    {% endif %}
+
+
+{% endblock %}

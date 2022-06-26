@@ -1,0 +1,45 @@
+.amoulus {
+  display: block;
+  margin: 0 auto;
+  cursor: pointer;
+  width: 124px;
+  height: 20px;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  font-size: 20px;
+  font-weight: 300;
+  letter-spacing: 2px;
+  color: #f3eaea;
+  border-radius: 7px;
+  padding: 18px 42px;
+  box-shadow: 0 0px 8px rgb(156 52 156 / 25%), 0 0px 15px rgb(135 135 216 / 42%), 0 0px 35px rgb(11 11 84 / 55%);
+}
+.amoulus::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 200%;
+  background: linear-gradient(to bottom right, #052452, #ee93ff);
+  transition: transform 0.4s;
+  z-index: -1;
+}
+.amoulus{
+  text-decoration: none;
+  color:#f4f0f5;
+}
+
+.amoulus:hover::before{
+  transform:translateY(-50%);
+}
+
+.text {
+    color: #7AEECD;
+}
+
+.nice{
+  text-align: center;
+  font-family: monospace;
+}
